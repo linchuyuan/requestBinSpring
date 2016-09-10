@@ -30,7 +30,6 @@ public class Bin {
     }
     //get a particular request 
     public Map<String,Object> getRequests(String id) {
-        this.lastId = id;
         Request found = (Request) this.requestCollection.get(id);
         return found.myRequest;
     }
